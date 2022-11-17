@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- CAMBIAR POR styles.min.css al finalizar el proyecto -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <form id="form" class="form">
+      <div class="first-column">
+        <div class="form__field">
+          <label for="text">Text</label>
+          <input type="text" name="text" id="text">
+        </div>
+        <div class="form__field">
+          <label for="number">Number</label>
+          <input type="text" name="number" id="number">
+        </div>
+        <div class="form__field">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="form__field">
+          <label for="required">Required</label>
+          <input type="text" name="required" id="required">
+        </div>
+        <div class="form__field">
+          <label for="disabled">Disabled</label>
+          <input type="text" disabled>
+        </div>
+        <div class="form__field">
+          <label for="text-area">Text Area</label>
+          <textarea name="text-area" id="text-area" class="text-area"></textarea>
+        </div>
+      </div>
+
+      <div class="second-column">
+        <div class="form__field">
+          <legend>Select Simple</legend>
+          <select name="country" id="country">
+            <option value="spain">España</option>
+            <option value="italy">Italia</option>
+            <option value="eeuu">EEUU</option>
+            <option value="germany">Alemania</option>
+            <option value="greece">Grecia</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <legend>Select Simple</legend>
+          <select name="country" id="country" multiple>
+            <option value="spain">España</option>
+            <option value="italy">Italia</option>
+            <option value="eeuu">EEUU</option>
+            <option value="germany">Alemania</option>
+            <option value="greece">Grecia</option>
+            <option value="uk">UK</option>
+          </select>
+        </div>
+        <legend>Radio Group label</legend>
+        <div class="form__field form__field--second">
+          <label for="one">Option One</label>
+          <input type="radio" name="options" id="one">
+        </div>
+        <div class="form__field form__field--second">
+          <label for="two">Option Two</label>
+          <input type="radio" name="options" id="two">
+        </div>
+        <div class="form__field form__field--second">
+          <label for="three">Option Three</label>
+          <input type="radio" name="options" id="three">
+        </div>
+        <div class="form__field form__field--second">
+          <label for="four">Option Four</label>
+          <input type="radio" name="options" id="four">
+        </div>
+      </div>
+      <div class="third-column">
+        <legend>Radio Group Custom</legend>
+        <div class="radio-group">
+          <div class="form__field form__field--third">
+            <input class="form__input form__input--radio-custom" type="radio" name="days" id="monday">
+            <label class="form__label form__label--radio-custom" for="monday">Monday</label>
+
+          </div>
+          <div class="form__field form__field--third">
+            <input class="form__input form__input--radio-custom" type="radio" name="days" id="tuesday">
+            <label class="form__label form__label--radio-custom" for="tuesday">Tuesday</label>
+
+          </div>
+          <div class="form__field form__field--third">
+            <input class="form__input form__input--radio-custom" type="radio" name="days" id="wed">
+            <label class="form__label form__label--radio-custom" for="wed">Wednesday</label>
+
+          </div>
+          <div class="form__field form__field--third">
+            <input class="form__input form__input--radio-custom" type="radio" name="days" id="thursday">
+            <label class="form__label form__label--radio-custom" for="thursday">Thursday</label>
+
+          </div>
+          <div class="form__field form__field--third">
+            <input class="form__input form__input--radio-custom" type="radio" name="days" id="fri">
+            <label class="form__label form__label--radio-custom" for="fri">Friday</label>
+          </div>
+        </div>
+
+        <legend>Checkbox Group Label</legend>
+        <div class="check-box">
+          <div class="form__field form__field--four">
+            <label for="walk">Walk</label>
+            <input type="checkbox" name="hobbies" id="walk">
+          </div>
+          <div class="form__field form__field--four">
+            <label for="read">Read</label>
+            <input type="checkbox" name="hobbies" id="read">
+          </div>
+          <div class="form__field form__field--four">
+            <label for="run">Run</label>
+            <input type="checkbox" name="hobbies" id="run">
+          </div>
+          <div class="form__field form__field--four">
+            <label for="swimm">Swimm</label>
+            <input type="checkbox" name="hobbies" id="swimm">
+          </div>
+        </div>
+
+        <div class="check-group">
+          <div class="form__field form__field--five">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" name="days" id="monday-check">
+            <label class="form__label form__label--checkbox-custom" for="monday-check">Monday</label>
+
+          </div>
+          <div class="form__field form__field--five">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" name="days" id="tuesday-check">
+            <label class="form__label form__label--checkbox-custom" for="tuesday-check">Tuesday</label>
+
+          </div>
+          <div class="form__field form__field--five">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" name="days" id="wed-check">
+            <label class="form__label form__label--checkbox-custom" for="wed-check">Wednesday</label>
+
+          </div>
+          <div class="form__field form__field--five">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" name="days" id="thursday-check">
+            <label class="form__label form__label--checkbox-custom" for="thursday-check">Thursday</label>
+
+          </div>
+          <div class="form__field form__field--five">
+            <input class="form__input form__input--checkbox-custom" type="checkbox" name="days" id="fri-check">
+            <label class="form__label form__label--checkbox-custom" for="fri-check">Friday</label>
+          </div>
+        </div>
+
+        <legend>Toggle Label</legend>
+        <input class="toggle-input" type="checkbox" id="toggle">
+        <label for="toggle" class="toggle__label"></label>
+
+
+    </form>
+  </main>
+</body>
+
+</html>
